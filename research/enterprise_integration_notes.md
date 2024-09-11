@@ -78,9 +78,7 @@ applications within the organization access consistent and accurate information.
   - Example: Data access from a data warehouse to data science team for analytics purposes
   - We learned about this during sem. 4 of DAT in business intelligence course. This is common technique for
 handling data before storing it in datawarehouse. Common and sometimes intensive preprocessing of data can be done away from the target system. 
-graph TD;
-  A[Source Systems] -->|Extract| B[ETL Process];
-  B -->|Transform| C[Central Repository];
+
 - File Transfer:
   - Description: Securely transfers large datasets between systems, often in batch mode.
   - Use Case: Efficient for moving bulk data between applications and systems.
@@ -118,5 +116,14 @@ graph TD;
 5. Metadata Management: Managing metadata is essential for understanding the structure, origin, and lineage of the integrated data.
 
 
+----------------------------------------------------------------------------------------------------------------------------------------
 
+## 2. Event-Driven Integration
+Definition: Event-driven integration enables systems to respond to real-time events without direct coupling between components.
+
+#### Key Integration Techniques:
+- Message-Driven Communication: Systems exchange messages through message brokers, supporting real-time updates and notifications.
+  - Example: Real-time updates on order status from an e-commerce system.
+- Event-Driven Communication: Events are broadcasted, and systems independently react to them.
+  - Example: An IoT thermostat sending temperature data to its server for analysis.
 
