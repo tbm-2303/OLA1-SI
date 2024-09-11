@@ -27,6 +27,7 @@ Look for blogs, articles, and videos discussing recent developments in Enterpris
 Explore the move from monolithic to microservices architecture.
 Explore integration technologies like Apache Camel, Spring Integration, or RabbitMQ.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -64,7 +65,7 @@ These patterns help solve challenges like data consistency, real-time responsive
 
 
 
-__
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 1. Data-Centric Integration
 - Focus on SST(single source of truth): 
 The primary goal is to have a centralized and authoritative data repository, ensuring that all 
