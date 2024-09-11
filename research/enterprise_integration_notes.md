@@ -59,8 +59,9 @@ three common tyes (i.e. patterns) of integration:
 #### 1. Data-Centric Integration
 + Focus on SST(single source of truth): The primary goal is to have a centralized and authoritative data repository, ensuring that all applications within the organization access consistent and accurate information.
 
-* Topic 1
-* Topic 2
-  * Subtopic 2.1
-  * Subtopic 2.2
-* Topic 3
+- Topic 1
+- Topic 2
+  - Subtopic 2.1
+  - Subtopic 2.2
+- Topic 3
+  - dd
