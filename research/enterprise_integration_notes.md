@@ -55,9 +55,9 @@ billing system, and confirmation from billing back to the ordering system.
 In technical terms, by integration, we mean passing data back and forth, so they meet users’ functional requirements along with meeting
 system’s non-functional requirements as well. But how data is passed back and forth matters and depends on what the specific use case is.
 Integration patterns define methods for linking various applications. The three primary patterns are:
-- 1. Data-Centric Integration
-- 2. Event-Driven Integration
-- 3. Application-Centric Integration
+1. Data-Centric Integration
+2. Event-Driven Integration
+3. Application-Centric Integration
 These patterns help solve challenges like data consistency, real-time responsiveness, and modular system design.
 
 
