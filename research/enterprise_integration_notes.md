@@ -39,9 +39,13 @@ Explore integration technologies like Apache Camel, Spring Integration, or Rabbi
 Link: [Integration Patterns in Software Development](https://www.architectureandgovernance.com/applications-technology/integration-patterns-in-software-development/)
 
 ### Application Integration - Description 
+Enterprise integration is the process of connecting multiple applications and systems to enable seamless communication and data sharing. 
 Big applications has to handle complex tasks, as such they will need to interact with other application and systems to achieve this.  
+Integration allows systems to work together to meet functional requirements (e.g., completing transactions) and non-functional requirements (e.g., performance, scalability).
+##### - Functional integration: How systems communicate to fulfill business processes (e.g., order fulfillment).
+##### - Non-functional integration: Ensuring performance, reliability, and security in integrated systems.
 
-#### Example 
+#### Example of application integration
 When a user buys a pair of sunglasses on Amazon app, it must fulfill the order and bill the user when the sunglasses are delivered. 
 In this case, the ordering system is integrated with the billing system and passes transactional data from the ordering system to the 
 billing system, and confirmation from billing back to the ordering system. 
@@ -50,10 +54,14 @@ billing system, and confirmation from billing back to the ordering system.
 #### Integration patterns
 In technical terms, by integration, we mean passing data back and forth, so they meet users’ functional requirements along with meeting
 system’s non-functional requirements as well. But how data is passed back and forth matters and depends on what the specific use case is.
-three common tyes (i.e. patterns) of integration:  
-- data-centric
-- event-driven 
-- application-centric and their pros and cons.  Each one of these patterns can be used in a variety of use cases.
+Integration patterns define methods for linking various applications. The three primary patterns are:
+- 1. Data-Centric Integration
+- 2. Event-Driven Integration
+- 3. Application-Centric Integration
+These patterns help solve challenges like data consistency, real-time responsiveness, and modular system design.
+
+
+
 
 
 #### 1. Data-Centric Integration
@@ -87,4 +95,23 @@ handling data before storing it in datawarehouse. Common and sometimes intensive
   - Description: Gathers data from multiple sources for reporting and analytics.
   - Use Case: Useful for creating consolidated views of data for reporting and analysis purposes.
   - Example: Data lake, data warehouse.
+
+	
+
+##### Benefits:
+
+- Consistency: Ensures that all applications are using consistent and up-to-date data.
+- Efficiency: Reduces redundancy and enhances efficiency by avoiding duplicate data storage.
+- Accuracy: Facilitates accurate reporting and analytics by providing a reliable data foundation.
  
+##### Key Considerations:
+
+1. Data Quality and Consistency: Ensuring data quality and consistency is crucial to maintain the integrity of the single source of truth.
+2. Security and Compliance: Implementing security measures to protect data during transfer and ensuring compliance with regulations.
+3. Scalability: Designing integration solutions that can scale to handle growing volumes of data and evolving business requirements.
+4. Monitoring and Management: Establishing monitoring mechanisms to track data movement, detect issues, and ensure timely resolution.
+5. Metadata Management: Managing metadata is essential for understanding the structure, origin, and lineage of the integrated data.
+
+
+
+
