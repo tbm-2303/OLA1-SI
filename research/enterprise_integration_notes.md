@@ -68,7 +68,22 @@ applications within the organization access consistent and accurate information.
   - Example: Data access from a data warehouse to data science team for analytics purposes
 	
 - File Transfer
+  - Description: Securely transfers large datasets between systems, often in batch mode.
+  - Use Case: Efficient for moving bulk data between applications and systems.
+  - Example: An enterprise sending employee information to a payroll processing company.
+
 - Shared Database
+  - Description: Consolidates data into a single database accessible to multiple applications.
+  - Use Case: Suitable for scenarios where multiple applications need to interact with and share a common set of data.
+  - Example: Operational data store where customer transactions are processed and stored.
+	
 - Data Replication
+  - Description: Maintains synchronized copies of data across multiple systems.
+  - Use Case: Enables real-time or near-real-time access to data across distributed environments.
+  - Example: Caching data for read-only purposes to provide status to the end use.
+	
 - Aggregation 
-- 
+  - Description: Gathers data from multiple sources for reporting and analytics.
+  - Use Case: Useful for creating consolidated views of data for reporting and analysis purposes.
+  - Example: Data lake, data warehouse.
+ 
