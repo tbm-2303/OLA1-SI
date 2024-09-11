@@ -66,7 +66,8 @@ applications within the organization access consistent and accurate information.
   - Description: Moves, and validates, data from diverse sources into a central repository, often a data warehouse or data lake.
   - Use Case: Useful for data consolidation, cleansing, and transformation before loading it into a target system.
   - Example: Data access from a data warehouse to data science team for analytics purposes
-	
+  - We learned about this during sem. 4 of DAT in business intelligence course. This is common technique for
+handling data before storing it in datawarehouse. Common and sometimes intensive preprocessing of data can be done away from the target system. 
 - File Transfer:
   - Description: Securely transfers large datasets between systems, often in batch mode.
   - Use Case: Efficient for moving bulk data between applications and systems.
