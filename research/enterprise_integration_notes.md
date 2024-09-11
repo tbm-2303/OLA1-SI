@@ -64,13 +64,13 @@ These patterns help solve challenges like data consistency, real-time responsive
 
 
 
-
-#### 1. Data-Centric Integration
+__
+## 1. Data-Centric Integration
 - Focus on SST(single source of truth): 
 The primary goal is to have a centralized and authoritative data repository, ensuring that all 
 applications within the organization access consistent and accurate information.
 
-##### Common patterns associated with data-centric integration:
+#### Common patterns associated with data-centric integration:
 - ETL (Extract, Transform, Load): 
   - Description: Moves, and validates, data from diverse sources into a central repository, often a data warehouse or data lake.
   - Use Case: Useful for data consolidation, cleansing, and transformation before loading it into a target system.
@@ -99,13 +99,13 @@ handling data before storing it in datawarehouse. Common and sometimes intensive
 
 	
 
-##### Benefits:
+#### Benefits:
 
 - Consistency: Ensures that all applications are using consistent and up-to-date data.
 - Efficiency: Reduces redundancy and enhances efficiency by avoiding duplicate data storage.
 - Accuracy: Facilitates accurate reporting and analytics by providing a reliable data foundation.
  
-##### Key Considerations:
+#### Key Considerations:
 
 1. Data Quality and Consistency: Ensuring data quality and consistency is crucial to maintain the integrity of the single source of truth.
 2. Security and Compliance: Implementing security measures to protect data during transfer and ensuring compliance with regulations.
