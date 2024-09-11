@@ -54,3 +54,8 @@ three common tyes (i.e. patterns) of integration:
 - data-centric
 - event-driven 
 - application-centric and their pros and cons.  Each one of these patterns can be used in a variety of use cases.
+
+
+#### 1. Data-Centric Integration
++ Focus on SST(single source of truth): 
+	+The primary goal is to have a centralized and authoritative data repository, ensuring that all applications within the organization access consistent and accurate information.
