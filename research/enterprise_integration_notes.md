@@ -127,3 +127,22 @@ Definition: Event-driven integration enables systems to respond to real-time eve
 - Event-Driven Communication: Events are broadcasted, and systems independently react to them.
   - Example: An IoT thermostat sending temperature data to its server for analysis.
 
+
+
+#### Key Considerations:
+- Scalability: Event-driven systems handle large numbers of asynchronous events.
+- Error Handling: Systems must manage failures and retries.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+## 3. Application-Centric Integration
+Definition: This approach emphasizes modular design and reusability by using well-defined interfaces like APIs.
+
+#### Key Integration Techniques:
+- Facade: Simplifies complex systems by offering a unified API.
+  - Example: A user interface for an e-commerce platform that hides the complexity of multiple backend services.
+- Adapter: Translates data between systems with incompatible formats.
+  - Example: Integrating a modern payment gateway with an older e-commerce system.
+- Content-Based Routing: Dynamically routes messages based on their content.
+  - Example: An email system routing messages based on keywords.
