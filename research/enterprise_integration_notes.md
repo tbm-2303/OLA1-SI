@@ -78,6 +78,9 @@ applications within the organization access consistent and accurate information.
   - Example: Data access from a data warehouse to data science team for analytics purposes
   - We learned about this during sem. 4 of DAT in business intelligence course. This is common technique for
 handling data before storing it in datawarehouse. Common and sometimes intensive preprocessing of data can be done away from the target system. 
+graph TD;
+  A[Source Systems] -->|Extract| B[ETL Process];
+  B -->|Transform| C[Central Repository];
 - File Transfer:
   - Description: Securely transfers large datasets between systems, often in batch mode.
   - Use Case: Efficient for moving bulk data between applications and systems.
