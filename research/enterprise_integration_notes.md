@@ -58,6 +58,7 @@ Integration patterns define methods for linking various applications. The three 
 1. Data-Centric Integration
 2. Event-Driven Integration
 3. Application-Centric Integration
+
 These patterns help solve challenges like data consistency, real-time responsiveness, and modular system design.
 
 
