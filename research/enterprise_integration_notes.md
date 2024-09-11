@@ -62,27 +62,27 @@ The primary goal is to have a centralized and authoritative data repository, ens
 applications within the organization access consistent and accurate information.
 
 ##### Common patterns associated with data-centric integration:
-- ETL
+- ETL (Extract, Transform, Load): 
   - Description: Moves, and validates, data from diverse sources into a central repository, often a data warehouse or data lake.
   - Use Case: Useful for data consolidation, cleansing, and transformation before loading it into a target system.
   - Example: Data access from a data warehouse to data science team for analytics purposes
 	
-- File Transfer
+- File Transfer:
   - Description: Securely transfers large datasets between systems, often in batch mode.
   - Use Case: Efficient for moving bulk data between applications and systems.
   - Example: An enterprise sending employee information to a payroll processing company.
 
-- Shared Database
+- Shared Database:
   - Description: Consolidates data into a single database accessible to multiple applications.
   - Use Case: Suitable for scenarios where multiple applications need to interact with and share a common set of data.
   - Example: Operational data store where customer transactions are processed and stored.
 	
-- Data Replication
+- Data Replication:
   - Description: Maintains synchronized copies of data across multiple systems.
   - Use Case: Enables real-time or near-real-time access to data across distributed environments.
   - Example: Caching data for read-only purposes to provide status to the end use.
 	
-- Aggregation 
+- Aggregation: 
   - Description: Gathers data from multiple sources for reporting and analytics.
   - Use Case: Useful for creating consolidated views of data for reporting and analysis purposes.
   - Example: Data lake, data warehouse.
