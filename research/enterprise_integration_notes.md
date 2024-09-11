@@ -61,3 +61,14 @@ three common tyes (i.e. patterns) of integration:
 The primary goal is to have a centralized and authoritative data repository, ensuring that all 
 applications within the organization access consistent and accurate information.
 
+##### Common patterns associated with data-centric integration:
+- ETL
+  - Description: Moves, and validates, data from diverse sources into a central repository, often a data warehouse or data lake.
+  - Use Case: Useful for data consolidation, cleansing, and transformation before loading it into a target system.
+  - Example: Data access from a data warehouse to data science team for analytics purposes
+	
+- File Transfer
+- Shared Database
+- Data Replication
+- Aggregation 
+- 
