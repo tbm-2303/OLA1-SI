@@ -34,20 +34,20 @@ Explore integration technologies like Apache Camel, Spring Integration, or Rabbi
 
 
 
-### I) Integration Patterns in Software Development
+## I) Integration Patterns in Software Development
 
 Link: [Integration Patterns in Software Development](https://www.architectureandgovernance.com/applications-technology/integration-patterns-in-software-development/)
 
-#### Application Integration - Description 
+### Application Integration - Description 
 Big applications has to handle complex tasks, as such they will need to interact with other application and systems to achieve this.  
 
-##### Example 
+#### Example 
 When a user buys a pair of sunglasses on Amazon app, it must fulfill the order and bill the user when the sunglasses are delivered. 
 In this case, the ordering system is integrated with the billing system and passes transactional data from the ordering system to the 
 billing system, and confirmation from billing back to the ordering system. 
 
 
-##### Integration patterns
+#### Integration patterns
 In technical terms, by integration, we mean passing data back and forth, so they meet users’ functional requirements along with meeting
 system’s non-functional requirements as well. But how data is passed back and forth matters and depends on what the specific use case is.
 three common tyes (i.e. patterns) of integration:  
