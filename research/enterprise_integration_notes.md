@@ -26,3 +26,14 @@ The role of Enterprise Integration in connecting services, data stores, and appl
 Look for blogs, articles, and videos discussing recent developments in Enterprise Integration.
 Explore the move from monolithic to microservices architecture.
 Explore integration technologies like Apache Camel, Spring Integration, or RabbitMQ.
+
+
+
+
+
+
+
+
+I) Integration Patterns in Software Development
+link: https://www.architectureandgovernance.com/applications-technology/integration-patterns-in-software-development/
+
