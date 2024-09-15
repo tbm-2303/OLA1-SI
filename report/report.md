@@ -63,10 +63,10 @@ The two major topologies:
 - bus. 
 
 Each has its own advantages and disadvantages. In the hub-and-spoke model, the EAI system is at the center (the hub), and interacts with the applications via the spokes.
-In the bus model, the EAI system is the bus (or is implemented as a resident module in an already existing message bus or message-oriented middleware).[citation needed]
+In the bus model, the EAI system is the bus (or is implemented as a resident module in an already existing message bus or message-oriented middleware).
 Most large enterprises use zoned networks to create a layered defense against network oriented threats. For example, an enterprise typically has a credit card processing 
 (PCI-compliant) zone, a non-PCI zone, a data zone, a DMZ zone to proxy external user access, and an IWZ zone to proxy internal user access. 
-Applications need to integrate across multiple zones. The Hub and spoke model would work better in this case
+Applications need to integrate across multiple zones. The Hub and spoke model would work better in this case.
 
 
 ---
@@ -137,17 +137,22 @@ Organizations are moving away from monolithic applications to microservices, whe
 
 ## 5. Application Integration Technologies
 
-Application integration technologies help connect disparate systems and ensure smooth communication across a business's IT infrastructure. Each technology plays a role in handling data exchange, automation, and enabling systems to work together. Here are some key technologies:
+Application integration technologies help connect disparate systems and ensure smooth communication across a business's IT infrastructure. 
+Each technology plays a role in handling data exchange, automation, and enabling systems to work together. Here are some key technologies:
 
 ### 5.1. Application Programming Interfaces (APIs)
 **Definition**:  
-APIs (Application Programming Interfaces) are sets of rules and protocols that allow different software applications to communicate with each other by exchanging data or invoking functionality. APIs act as an intermediary between systems, enabling them to interact without needing to understand each other’s underlying logic or technology stack.
+APIs (Application Programming Interfaces) are sets of rules and protocols that allow different software applications to communicate with 
+each other by exchanging data or invoking functionality. APIs act as an intermediary between systems, enabling them to interact without 
+needing to understand each other’s underlying logic or technology stack.
 
 **Use Case**:  
-APIs are ideal when two applications need to share data or functionality. They enable developers to access certain features of an application (such as a database or a payment service) without requiring direct access to the underlying code or data storage.
+APIs are ideal when two applications need to share data or functionality. They enable developers to access certain features of an application 
+(such as a database or a payment service) without requiring direct access to the underlying code or data storage.
 
 **Examples**:  
-- **REST APIs**: Most commonly used in web services, REST APIs enable web applications to communicate by sending HTTP requests. For example, when you log into an e-commerce platform using your Google account, an API request is made to Google’s servers to verify your identity.
+- **REST APIs**: Most commonly used in web services, REST APIs enable web applications to communicate by sending HTTP requests. For example, 
+when you log into an e-commerce platform using your Google account, an API request is made to Google’s servers to verify your identity.
 - **GraphQL**: A more flexible alternative to REST, it allows clients to request exactly the data they need from a server, improving efficiency in data transfer.
 - **Payment Gateway APIs**: Services like PayPal and Stripe use APIs to allow applications to integrate payment processing functionality.
 
@@ -163,13 +168,16 @@ APIs are ideal when two applications need to share data or functionality. They e
 ### 5.2. Middleware
 
 **Definition**:  
-Middleware is software that acts as a bridge between different applications, allowing them to communicate and share data. It facilitates data exchange by translating communication between systems that might use different formats, languages, or protocols.
+Middleware is software that acts as a bridge between different applications, allowing them to communicate and share data. 
+It facilitates data exchange by translating communication between systems that might use different formats, languages, or protocols.
 
 **Use Case**:  
-Middleware is used to integrate complex systems within an organization, such as ERP systems, CRMs, and third-party services. It helps avoid point-to-point integration by creating a more scalable, central integration point.
+Middleware is used to integrate complex systems within an organization, such as ERP systems, CRMs, and third-party services.
+It helps avoid point-to-point integration by creating a more scalable, central integration point.
 
 **Examples**:  
-- **Enterprise Service Bus (ESB)**: A middleware tool that allows different services to communicate with each other using a bus-like framework. For example, an ESB could handle data flow between an inventory management system and a CRM.
+- **Enterprise Service Bus (ESB)**: A middleware tool that allows different services to communicate with each other using a bus-like framework. 
+For example, an ESB could handle data flow between an inventory management system and a CRM.
 - **Message Brokers (e.g., Apache Kafka, RabbitMQ)**: Facilitate asynchronous messaging between applications, which is especially useful in distributed systems.
 - **Web Application Servers (e.g., Tomcat, WebSphere)**: These servers often include middleware services that manage communication between web applications and backend systems.
 
@@ -186,10 +194,12 @@ Middleware is used to integrate complex systems within an organization, such as 
 ### 5.3. Webhooks
 
 **Definition**:  
-Webhooks are a lightweight, event-driven integration mechanism that triggers data exchange between applications in real-time. Unlike APIs, which require a request-response pattern, webhooks push data to other systems as soon as a specific event occurs.
+Webhooks are a lightweight, event-driven integration mechanism that triggers data exchange between applications in real-time. 
+Unlike APIs, which require a request-response pattern, webhooks push data to other systems as soon as a specific event occurs.
 
 **Use Case**:  
-Webhooks are useful when applications need to communicate in real-time or near-real-time without polling for updates. For example, when an order is placed on an e-commerce website, a webhook could notify the payment gateway and inventory system simultaneously.
+Webhooks are useful when applications need to communicate in real-time or near-real-time without polling for updates. 
+For example, when an order is placed on an e-commerce website, a webhook could notify the payment gateway and inventory system simultaneously.
 
 **Examples**:  
 - **Slack Integrations**: Webhooks can be used to send automated messages to a Slack channel when a specific event happens, such as a new ticket being created in a helpdesk system.
@@ -209,13 +219,17 @@ Webhooks are useful when applications need to communicate in real-time or near-r
 ### 5.4. Message-Oriented Middleware (MOM)
 
 **Definition**:  
-Message-Oriented Middleware (MOM) is a type of software that enables asynchronous communication between systems via message queues. It decouples the sending and receiving systems, allowing them to communicate without being directly connected.
+Message-Oriented Middleware (MOM) is a type of software that enables asynchronous communication between systems via message queues. 
+It decouples the sending and receiving systems, allowing them to communicate without being directly connected.
 
 **Use Case**:  
-MOM is commonly used in distributed systems where high availability, fault tolerance, and reliability are crucial. For instance, in a microservices architecture, MOM can help ensure that even if one service is down, messages are stored in a queue and processed when the service comes back online.
+MOM is commonly used in distributed systems where high availability, fault tolerance, and reliability are crucial. 
+For instance, in a microservices architecture, MOM can help ensure that even if one service is down, messages are stored 
+in a queue and processed when the service comes back online.
 
 **Examples**:  
-- **Apache Kafka**: A distributed streaming platform that enables high-throughput, fault-tolerant, and scalable messaging between systems. It is widely used in event-driven architectures.
+- **Apache Kafka**: A distributed streaming platform that enables high-throughput, fault-tolerant, and scalable messaging between systems. 
+It is widely used in event-driven architectures.
 - **RabbitMQ**: A message broker that supports multiple messaging protocols and allows applications to exchange messages asynchronously.
 - **Amazon SQS**: A cloud-based messaging queue service that decouples the components of a cloud application.
 
@@ -233,10 +247,12 @@ MOM is commonly used in distributed systems where high availability, fault toler
 ### 5.5. Integration Platform as a Service (iPaaS)
 
 **Definition**:  
-iPaaS is a cloud-based suite of integration tools that allows enterprises to build, manage, and deploy integration flows connecting different cloud and on-premises applications. iPaaS enables secure, end-to-end data integration and often includes pre-built connectors for popular software applications.
+iPaaS is a cloud-based suite of integration tools that allows enterprises to build, manage, and deploy integration flows connecting different cloud and on-premises applications. 
+iPaaS enables secure, end-to-end data integration and often includes pre-built connectors for popular software applications.
 
 **Use Case**:  
-iPaaS is typically used by large enterprises needing to manage integrations between multiple applications across hybrid cloud environments, such as connecting on-premise ERP systems to cloud-based CRM solutions.
+iPaaS is typically used by large enterprises needing to manage integrations between multiple applications across hybrid cloud environments, such as connecting on-premise 
+ERP systems to cloud-based CRM solutions.
 
 **Examples**:  
 - **MuleSoft**: A widely-used iPaaS platform that connects applications and data in hybrid IT environments.
@@ -257,13 +273,16 @@ iPaaS is typically used by large enterprises needing to manage integrations betw
 ### 5.6. Microservices Integration
 
 **Definition**:  
-Microservices integration refers to the practice of connecting independent, modular services that perform specific tasks in an architecture. These services communicate over a network, often using lightweight protocols like HTTP or WebSockets.
+Microservices integration refers to the practice of connecting independent, modular services that perform specific tasks in an architecture. 
+These services communicate over a network, often using lightweight protocols like HTTP or WebSockets.
 
 **Use Case**:  
-Microservices are used to create flexible, scalable, and maintainable applications. Each service can be developed, deployed, and scaled independently, which is particularly useful for large enterprises or web-scale applications.
+Microservices are used to create flexible, scalable, and maintainable applications. Each service can be developed, deployed, and scaled independently, 
+which is particularly useful for large enterprises or web-scale applications.
 
 **Examples**:  
-- **Netflix**: The company famously adopted a microservices architecture to break down its monolithic system into independent services, each responsible for different functionalities, such as user management, video recommendations, and billing.
+- **Netflix**: The company famously adopted a microservices architecture to break down its monolithic system into independent services, 
+each responsible for different functionalities, such as user management, video recommendations, and billing.
 - **Amazon**: Uses microservices to handle different functionalities in its vast e-commerce platform, such as order processing, payment, and inventory management.
 - **API Gateway**: Services in a microservices architecture can be exposed via an API gateway, which acts as a single entry point for external clients.
 
@@ -304,17 +323,21 @@ Cloud-based tools for building and deploying integration flows, connecting appli
 
 ## Models vs Patterns 
 ### Integration Patterns:
-- Definition: Patterns are reusable, best-practice solutions to recurring problems in software design. Specifically, in enterprise integration, patterns describe how different systems can be connected and how data can flow between them.
-- Focus: They solve specific integration problems at a detailed level, such as how messages should be routed, how systems should communicate asynchronously, or how to handle errors in the integration process.
+- Definition: Patterns are reusable, best-practice solutions to recurring problems in software design. Specifically, in enterprise integration, 
+patterns describe how different systems can be connected and how data can flow between them.
+- Focus: They solve specific integration problems at a detailed level, such as how messages should be routed, how systems should communicate asynchronously, 
+or how to handle errors in the integration process.
 - Scope: Patterns usually deal with specific tasks or processes within an integration system (e.g., how to handle a message, or how to route information based on its content).
 #### Examples:
 - Message Bus: A pattern where different applications send and receive messages through a shared bus.
 - Content-Based Router: A pattern where messages are routed to different systems based on the content.
 - Publish-Subscribe (Pub-Sub): A pattern where messages are broadcasted to all interested subscribers.
 - Adapter Pattern: A way to translate data or communications between systems with incompatible interfaces.
-- Key Point: Integration patterns provide blueprints for specific problems like communication between two systems or routing messages. They are tactical and address smaller, focused issues in the larger integration strategy.
+- Key Point: Integration patterns provide blueprints for specific problems like communication between two systems or routing messages. 
+They are tactical and address smaller, focused issues in the larger integration strategy.
 ### Integration Models:
-- Definition: Integration models are architectural approaches for connecting multiple systems and defining how they interact on a higher level. They describe the overall structure or architecture of how systems are integrated.
+- Definition: Integration models are architectural approaches for connecting multiple systems and defining how they interact on a higher level. 
+They describe the overall structure or architecture of how systems are integrated.
 - Focus: Models define how the integration is organized across the entire enterprise, focusing on the interaction between multiple systems over time.
 - Scope: Integration models look at the bigger picture, determining how all components or applications should work together. They can influence how patterns are used within the model.
 #### Examples:
