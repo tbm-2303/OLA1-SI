@@ -20,7 +20,9 @@ future for the exam project so make sure to do that.
 
 ## 1. Introduction to Enterprise Integration
 
-**Enterprise Integration** refers to the process of connecting disparate systems, services, and applications within an organization to enable seamless communication and data sharing. It is crucial for modern businesses because of the need for systems to work together to meet both functional (e.g., completing transactions) and non-functional requirements (e.g., performance, scalability, security).
+**Enterprise Integration** refers to the process of connecting disparate systems, services, and applications within an organization to enable seamless 
+communication and data sharing. It is crucial for modern businesses because of the need for systems to work together to meet both functional 
+(e.g., completing transactions) and non-functional requirements (e.g., performance, scalability, security).
 
 ### Why Is Enterprise Integration Important?
 
@@ -47,7 +49,8 @@ A messaging pattern where messages are broadcasted to all subscribers, enabling 
 A design pattern where services are discrete units of functionality that can be accessed over a network.
 
 ### 2.5. Microservices
-A modern architectural pattern that breaks down applications into smaller, loosely coupled services, each responsible for a specific function. Services communicate via APIs or messaging systems.
+A modern architectural pattern that breaks down applications into smaller, loosely coupled services, each responsible for a specific function. 
+Services communicate via APIs or messaging systems.
 
 ---
 
@@ -127,3 +130,31 @@ Software that facilitates communication between different applications, allowing
 Event-driven HTTP callbacks that trigger actions in response to system events, facilitating real-time data transmission.
 
 ---
+
+## 6. Integration Models
+
+### 6.1. Point-to-Point Integration
+Direct communication between individual systems. Suitable for small-scale projects but difficult to scale.
+
+### 6.2. Enterprise Application Integration (EAI)
+A hub-and-spoke model where a central hub handles communication between systems. This model simplifies monitoring but can be a single point of failure.
+
+### 6.3. Enterprise Service Bus (ESB)
+A flexible integration platform that routes messages between applications, supporting a variety of communication protocols and data formats.
+
+### 6.4. Message-Oriented Middleware (MOM)
+Facilitates asynchronous communication through message queues, decoupling sending and receiving processes.
+
+### 6.5. Microservices Integration
+A microservices architecture that breaks down applications into smaller, independent services that communicate over APIs or messaging systems.
+
+### 6.6. Integration Platform as a Service (iPaaS)
+Cloud-based tools for building and deploying integration flows, connecting applications across public and private clouds.
+
+---
+
+## 7. Conclusion
+
+Enterprise Integration plays a critical role in modernizing business systems by enabling efficient data sharing and communication across multiple applications and services. 
+By understanding and applying the appropriate patterns—whether data-centric, event-driven, or application-centric—organizations can build scalable, maintainable, 
+and resilient systems that meet both current and future needs.
